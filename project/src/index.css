@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mapboxgl-canvas {
+  outline: none;
+}
+
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
+.mapboxgl-ctrl-bottom-right {
+  display: none !important;
+}
+
+.form-checkbox {
+  @apply rounded border-gray-300 text-blue-600 shadow-sm focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50;
+}
+
+/* Custom map controls */
+.map-control {
+  @apply bg-white rounded-lg shadow-lg p-4;
+}
+
+.map-control label {
+  @apply text-sm text-gray-700 ml-2 cursor-pointer;
+}
+
+/* Popup styling */
+.mapboxgl-popup-content {
+  @apply p-3 rounded-lg shadow-lg;
+}
+
+.mapboxgl-popup-content h3 {
+  @apply text-lg font-semibold mb-1;
+}
+
+.mapboxgl-popup-content p {
+  @apply text-sm text-gray-600 mb-1;
+}
